@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Full Page Screenshot &amp; PDF — Privacy Policy</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+
+  :root {
+    --bg:        #0f1115;
+    --bg-elev:   #15171d;
+    --bg-card:   #1a1d24;
+    --primary:   #2f81f7;
+    --accent:    #5b9dfa;
+    --accent-2:  #8fbcfc;
+    --text:      #e7e9ee;
+    --text-2:    #9aa2b1;
+    --border:    rgba(255,255,255,0.09);
+    --border-2:  rgba(255,255,255,0.14);
+    --good:      #22c55e;
+    --good-bg:   rgba(34,197,94,0.10);
+    --good-bd:   rgba(34,197,94,0.28);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg:        #f7f9fc;
+      --bg-elev:   #ffffff;
+      --bg-card:   #eef3fb;
+      --primary:   #2f81f7;
+      --accent:    #1f6fe0;
+      --accent-2:  #17549c;
+      --text:      #16181d;
+      --text-2:    #5b6270;
+      --border:    rgba(15,20,30,0.09);
+      --border-2:  rgba(15,20,30,0.14);
+      --good:      #15803d;
+      --good-bg:   rgba(21,128,61,0.08);
+      --good-bd:   rgba(21,128,61,0.25);
+    }
+  }
+
+  html { color-scheme: light dark; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 34px;
+  }
+  .brand svg { border-radius: 7px; flex-shrink: 0; }
+  .brand-name { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 6px;
+  }
+  .effective {
+    font-size: 12.5px;
+    color: var(--text-2);
+    margin: 0 0 30px;
+  }
+
+  .summary {
+    background: var(--good-bg);
+    border: 1px solid var(--good-bd);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 36px;
+  }
+  .summary-label {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--good);
+    margin: 0 0 8px;
+  }
+  .summary p {
+    margin: 0 0 8px;
+    font-size: 14px;
+  }
+  .summary p:last-child { margin-bottom: 0; }
+  .summary strong { color: var(--text); }
+
+  section { margin-bottom: 34px; }
+  section:last-of-type { margin-bottom: 0; }
+
+  h2 {
+    font-size: 15.5px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p { font-size: 14px; color: var(--text-2); margin: 0 0 12px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+  p strong { color: var(--text); font-weight: 600; }
+
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  ul:last-child { margin-bottom: 0; }
+  li { font-size: 14px; color: var(--text-2); margin-bottom: 8px; max-width: 60ch; }
+  li:last-child { margin-bottom: 0; }
+  li strong { color: var(--text); font-weight: 600; }
+
+  .perm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .perm-table th {
+    text-align: left;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-2);
+    padding: 0 12px 8px 0;
+    border-bottom: 1px solid var(--border-2);
+  }
+  .perm-table td {
+    padding: 10px 12px 10px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-2);
+    vertical-align: top;
+  }
+  .perm-table td:first-child { color: var(--text); font-weight: 600; white-space: nowrap; }
+  .perm-table tr:last-child td { border-bottom: none; }
+  .table-scroll { overflow-x: auto; }
+
+  footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 12.5px;
+    color: var(--text-2);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .footer-also { opacity: 0.75; }
+
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <rect width="24" height="24" rx="6" fill="#2f81f7"/>
+      <path d="M6.5 9h1.2l.6-1.2h3.4L12.3 9h1.2a1.2 1.2 0 0 1 1.2 1.2v4.6a1.2 1.2 0 0 1-1.2 1.2h-7A1.2 1.2 0 0 1 5.3 14.8v-4.6A1.2 1.2 0 0 1 6.5 9z" fill="white"/>
+      <circle cx="9.8" cy="12.3" r="1.8" fill="#2f81f7"/>
+    </svg>
+    <span class="brand-name">Full Page Screenshot &amp; PDF</span>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective August 24, 2026</p>
+
+  <div class="summary">
+    <p class="summary-label">In short</p>
+    <p>Full Page Screenshot &amp; PDF captures and edits your screenshot <strong>entirely inside your own browser</strong>. Your captured page, annotations, and edited image are never uploaded to any server. The only thing that ever leaves your device is a small, anonymous usage count (like "a capture happened") sent to Google Analytics — never the image itself, never page content, never anything that identifies you.</p>
+  </div>
+
+  <section>
+    <h2>What this extension does</h2>
+    <p>Full Page Screenshot &amp; PDF scrolls through the current tab, stitches the result into one full-page image, and opens it in a built-in editor where you can annotate it (text, shapes, arrows, blur/redact, callouts, and more) before exporting it as a PNG or PDF, sharing it, or copying selectable text straight off the page.</p>
+    <p>All capturing, stitching, and editing happens locally in your browser. The image is only saved or sent anywhere when <strong>you</strong> click Download or Share.</p>
+  </section>
+
+  <section>
+    <h2>What we collect</h2>
+    <p>We collect a small amount of <strong>anonymous, aggregate usage data</strong> via Google Analytics (GA4), so we can see roughly how many people use the extension, which countries they're using it from, and how often the capture feature is used. Specifically:</p>
+    <ul>
+      <li><strong>A randomly generated anonymous ID</strong> — not your name, email, Google account, or any other identity, just a random number stored on your device so repeat usage can be counted correctly.</li>
+      <li><strong>Your approximate country</strong> — inferred by Google from your network connection at the time of the request. We never see or store your IP address ourselves.</li>
+      <li><strong>Feature-usage counts</strong> — e.g. "a capture was completed" — just a counter, with no page content, URL, image data, or text attached.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect your captured images, the pages you visit, the text you annotate, your browsing history, or any personally identifiable information.</p>
+  </section>
+
+  <section>
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not sell, rent, or share any data with third parties for advertising or any other purpose.</li>
+      <li>We do not run ads or embed advertising SDKs in this extension.</li>
+      <li>We do not require an account, sign-in, or any personal information to use the extension.</li>
+      <li>We do not read or transmit the content of the pages you capture.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where your captures and settings live</h2>
+    <p>A capture is held temporarily in Chrome's local storage (<code>chrome.storage.local</code>) just long enough to open the editor, then removed. Anything you draw or type in the editor stays in that browser tab's memory until you export it — it is never synced to a server or accessible to us, to the sites you visit, or to any other extension.</p>
+  </section>
+
+  <section>
+    <h2>Permissions we ask for, and why</h2>
+    <div class="table-scroll">
+      <table class="perm-table">
+        <tr><th>Permission</th><th>Why it's needed</th></tr>
+        <tr><td>activeTab</td><td>To capture and read text from the page you're currently viewing, only when you click the capture button.</td></tr>
+        <tr><td>scripting</td><td>To scroll the page and extract selectable text during capture.</td></tr>
+        <tr><td>downloads</td><td>To save your exported PNG or PDF file when you choose to download it.</td></tr>
+        <tr><td>storage / unlimitedStorage</td><td>To temporarily hold the captured image while the editor loads, and to store the random anonymous analytics ID mentioned above.</td></tr>
+      </table>
+    </div>
+    <p style="margin-top:14px;">This extension deliberately does <strong>not</strong> request broad host permissions (like access to "all websites at all times") — it only ever acts on the tab you're actively viewing, and only when you start a capture.</p>
+  </section>
+
+  <section>
+    <h2>Third parties</h2>
+    <p>The only third party involved is <strong>Google Analytics</strong>, used solely for the anonymous, aggregate usage statistics described above. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--accent);">Google's Privacy Policy</a> for how Google handles that data on its end.</p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>This extension is not directed at children and does not knowingly collect any personally identifiable information from anyone, regardless of age.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy ever changes, the updated version will be published here with a new effective date. Continued use of the extension after a change means you accept the revised policy.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy or the extension can be sent to <a href="mailto:toolfi.ai26@gmail.com" style="color:var(--accent);">toolfi.ai26@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <div>Full Page Screenshot &amp; PDF — capture, annotate, export.</div>
+    <div class="footer-also">Also by the same maker: <a href="https://www.promptmasterpro.net" target="_blank" rel="noopener">PromptMaster Pro →</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
