@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Full Page Screenshot &amp; PDF — Privacy Policy</title>
+<title>Full Page Screenshot &amp; PDF · Privacy Policy</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
 
@@ -182,7 +182,7 @@
 
   <div class="summary">
     <p class="summary-label">In short</p>
-    <p>Full Page Screenshot &amp; PDF captures and edits your screenshot <strong>entirely inside your own browser</strong>. Your captured page, annotations, and edited image are never uploaded to any server. The only thing that ever leaves your device is a small, anonymous usage count (like "a capture happened") sent to Google Analytics — never the image itself, never page content, never anything that identifies you.</p>
+    <p>Full Page Screenshot &amp; PDF captures and edits your screenshot <strong>entirely inside your own browser</strong>. Your captured page, annotations, and edited image are never uploaded to any server. The only thing that ever leaves your device is a small, anonymous usage count (like "a capture happened") sent to Google Analytics. Never the image itself, never page content, never anything that identifies you.</p>
   </div>
 
   <section>
@@ -195,9 +195,9 @@
     <h2>What we collect</h2>
     <p>We collect a small amount of <strong>anonymous, aggregate usage data</strong> via Google Analytics (GA4), so we can see roughly how many people use the extension, which countries they're using it from, and how often the capture feature is used. Specifically:</p>
     <ul>
-      <li><strong>A randomly generated anonymous ID</strong> — not your name, email, Google account, or any other identity, just a random number stored on your device so repeat usage can be counted correctly.</li>
-      <li><strong>Your approximate country</strong> — inferred by Google from your network connection at the time of the request. We never see or store your IP address ourselves.</li>
-      <li><strong>Feature-usage counts</strong> — e.g. "a capture was completed" — just a counter, with no page content, URL, image data, or text attached.</li>
+      <li><strong>A randomly generated anonymous ID:</strong> not your name, email, Google account, or any other identity, just a random number stored on your device so repeat usage can be counted correctly.</li>
+      <li><strong>Your approximate country:</strong> inferred by Google from your network connection at the time of the request. We never see or store your IP address ourselves.</li>
+      <li><strong>Feature-usage counts:</strong> e.g. "a capture was completed". Just a counter, with no page content, URL, image data, or text attached.</li>
     </ul>
     <p>We do <strong>not</strong> collect your captured images, the pages you visit, the text you annotate, your browsing history, or any personally identifiable information.</p>
   </section>
@@ -214,7 +214,8 @@
 
   <section>
     <h2>Where your captures and settings live</h2>
-    <p>A capture is held temporarily in Chrome's local storage (<code>chrome.storage.local</code>) just long enough to open the editor, then removed. Anything you draw or type in the editor stays in that browser tab's memory until you export it — it is never synced to a server or accessible to us, to the sites you visit, or to any other extension.</p>
+    <p>A capture is held temporarily in Chrome's local storage (<code>chrome.storage.local</code>) just long enough to open the editor, then removed. Anything you draw or type in the editor stays in that browser tab's memory until you export it. It is never synced to a server or accessible to us, to the sites you visit, or to any other extension.</p>
+    <p><strong>Capture history:</strong> your last 50 captures (the image, the page title and its address) are also kept in the extension's own storage on your device (IndexedDB), so you can reopen, download or delete them from <em>Capture history</em>. They never leave your browser, and you can delete any or all of them there at any time. Your editor settings (for example the PDF page size) are kept the same way.</p>
   </section>
 
   <section>
@@ -224,11 +225,11 @@
         <tr><th>Permission</th><th>Why it's needed</th></tr>
         <tr><td>activeTab</td><td>To capture and read text from the page you're currently viewing, only when you click the capture button.</td></tr>
         <tr><td>scripting</td><td>To scroll the page and extract selectable text during capture.</td></tr>
-        <tr><td>downloads</td><td>To save your exported PNG or PDF file when you choose to download it.</td></tr>
-        <tr><td>storage / unlimitedStorage</td><td>To temporarily hold the captured image while the editor loads, and to store the random anonymous analytics ID mentioned above.</td></tr>
+        <tr><td>downloads</td><td>To save your exported PNG, JPG or PDF file when you choose to download it.</td></tr>
+        <tr><td>storage / unlimitedStorage</td><td>To temporarily hold the captured image while the editor loads, to keep your local capture history and editor settings on your device, and to store the random anonymous analytics ID mentioned above.</td></tr>
       </table>
     </div>
-    <p style="margin-top:14px;">This extension deliberately does <strong>not</strong> request broad host permissions (like access to "all websites at all times") — it only ever acts on the tab you're actively viewing, and only when you start a capture.</p>
+    <p style="margin-top:14px;">This extension deliberately does <strong>not</strong> request broad host permissions (like access to "all websites at all times"). It only ever acts on the tab you're actively viewing, and only when you start a capture.</p>
   </section>
 
   <section>
@@ -252,7 +253,7 @@
   </section>
 
   <footer>
-    <div>Full Page Screenshot &amp; PDF — capture, annotate, export.</div>
+    <div>Full Page Screenshot &amp; PDF: capture, annotate, export.</div>
     <div class="footer-also">Also by the same maker: <a href="https://www.promptmasterpro.net" target="_blank" rel="noopener">PromptMaster Pro →</a></div>
   </footer>
 
