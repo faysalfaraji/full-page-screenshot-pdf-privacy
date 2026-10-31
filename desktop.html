@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Full Page Screenshot &amp; PDF for Windows Â· Privacy Policy</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+
+  :root {
+    --bg:        #0f1115;
+    --bg-elev:   #15171d;
+    --bg-card:   #1a1d24;
+    --primary:   #2f81f7;
+    --accent:    #5b9dfa;
+    --accent-2:  #8fbcfc;
+    --text:      #e7e9ee;
+    --text-2:    #9aa2b1;
+    --border:    rgba(255,255,255,0.09);
+    --border-2:  rgba(255,255,255,0.14);
+    --good:      #22c55e;
+    --good-bg:   rgba(34,197,94,0.10);
+    --good-bd:   rgba(34,197,94,0.28);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg:        #f7f9fc;
+      --bg-elev:   #ffffff;
+      --bg-card:   #eef3fb;
+      --primary:   #2f81f7;
+      --accent:    #1f6fe0;
+      --accent-2:  #17549c;
+      --text:      #16181d;
+      --text-2:    #5b6270;
+      --border:    rgba(15,20,30,0.09);
+      --border-2:  rgba(15,20,30,0.14);
+      --good:      #15803d;
+      --good-bg:   rgba(21,128,61,0.08);
+      --good-bd:   rgba(21,128,61,0.25);
+    }
+  }
+
+  html { color-scheme: light dark; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 34px;
+  }
+  .brand svg { border-radius: 7px; flex-shrink: 0; }
+  .brand-name { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 6px;
+  }
+  .effective {
+    font-size: 12.5px;
+    color: var(--text-2);
+    margin: 0 0 30px;
+  }
+
+  .summary {
+    background: var(--good-bg);
+    border: 1px solid var(--good-bd);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 36px;
+  }
+  .summary-label {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--good);
+    margin: 0 0 8px;
+  }
+  .summary p {
+    margin: 0 0 8px;
+    font-size: 14px;
+  }
+  .summary p:last-child { margin-bottom: 0; }
+  .summary strong { color: var(--text); }
+
+  section { margin-bottom: 34px; }
+  section:last-of-type { margin-bottom: 0; }
+
+  h2 {
+    font-size: 15.5px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p { font-size: 14px; color: var(--text-2); margin: 0 0 12px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+  p strong { color: var(--text); font-weight: 600; }
+
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  ul:last-child { margin-bottom: 0; }
+  li { font-size: 14px; color: var(--text-2); margin-bottom: 8px; max-width: 60ch; }
+  li:last-child { margin-bottom: 0; }
+  li strong { color: var(--text); font-weight: 600; }
+
+  .perm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .perm-table th {
+    text-align: left;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-2);
+    padding: 0 12px 8px 0;
+    border-bottom: 1px solid var(--border-2);
+  }
+  .perm-table td {
+    padding: 10px 12px 10px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-2);
+    vertical-align: top;
+  }
+  .perm-table td:first-child { color: var(--text); font-weight: 600; white-space: nowrap; }
+  .perm-table tr:last-child td { border-bottom: none; }
+  .table-scroll { overflow-x: auto; }
+
+  footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 12.5px;
+    color: var(--text-2);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .footer-also { opacity: 0.75; }
+
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <rect width="24" height="24" rx="6" fill="#2f81f7"/>
+      <path d="M6.5 9h1.2l.6-1.2h3.4L12.3 9h1.2a1.2 1.2 0 0 1 1.2 1.2v4.6a1.2 1.2 0 0 1-1.2 1.2h-7A1.2 1.2 0 0 1 5.3 14.8v-4.6A1.2 1.2 0 0 1 6.5 9z" fill="white"/>
+      <circle cx="9.8" cy="12.3" r="1.8" fill="#2f81f7"/>
+    </svg>
+    <span class="brand-name">Full Page Screenshot &amp; PDF for Windows</span>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective October 31, 2026</p>
+
+  <div class="summary">
+    <p class="summary-label">In short</p>
+    <p>The Windows app takes and edits your screenshots <strong>entirely on your own computer</strong>. It does not send your screenshots, your screen, or anything about you to any server. It has no analytics, no ads and no account.</p>
+  </div>
+
+  <section>
+    <h2>What the app does</h2>
+    <p>Full Page Screenshot &amp; PDF for Windows sits in the taskbar. When you click its icon, press its shortcut (Alt + Q by default) or choose Full screen, it takes a picture of your screen and lets you select an area. You can then copy it, save it, or open it in the built-in editor to annotate it (text, shapes, arrows, blur, callouts and more) and export it as PNG, JPG or PDF.</p>
+    <p>The screen is only captured when <strong>you</strong> start a screenshot. The app never records your screen in the background.</p>
+  </section>
+
+  <section>
+    <h2>What we collect</h2>
+    <p><strong>Nothing.</strong> The app does not collect, send or share any data. It does not connect to the internet for its features, and it contains no analytics or tracking of any kind.</p>
+  </section>
+
+  <section>
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not upload your screenshots or any part of your screen anywhere.</li>
+      <li>We do not sell, rent or share any data with anyone.</li>
+      <li>We do not run ads or include advertising or analytics code.</li>
+      <li>We do not require an account, sign-in or any personal information.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What stays on your computer</h2>
+    <ul>
+      <li><strong>Screenshots you save</strong> go to the folder you choose (by default <code>Pictures\Full Page Screenshot</code>). Copied screenshots go to your clipboard.</li>
+      <li><strong>History:</strong> your last 50 screenshots are kept in the app's own data folder on your computer so you can open, copy, save or delete them from <em>History</em>. You can delete any or all of them there at any time.</li>
+      <li><strong>Settings</strong> (shortcut, save folder, editor options) are kept in the same app folder.</li>
+      <li><strong>Start with Windows</strong> (on by default) adds the app to your own startup list. You can turn it off in Windows Settings under Apps &gt; Startup. The version installed with Setup also has this option in its own Settings, and asks Windows once to show its icon on the taskbar instead of hiding it.</li>
+    </ul>
+    <p>None of this is ever sent to us or to anyone else.</p>
+  </section>
+
+  <section>
+    <h2>Third parties</h2>
+    <p>None. The app does not use any third-party service.</p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>The app is not directed at children and does not collect any personal information from anyone, regardless of age.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy ever changes, the updated version will be published here with a new effective date. Continued use of the app after a change means you accept the revised policy.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy or the app can be sent to <a href="mailto:toolfi.ai26@gmail.com" style="color:var(--accent);">toolfi.ai26@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <div>Full Page Screenshot &amp; PDF for Windows: capture, annotate, export.</div>
+    <div class="footer-also">Also by the same maker: <a href="https://www.promptmasterpro.net" target="_blank" rel="noopener">PromptMaster Pro â†’</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
